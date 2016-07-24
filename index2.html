@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shopping</title>
+	<link rel="stylesheet" href="style2.css">
+	<script src="jquery-2.2.3.js"></script>
+	<script src="index.js"></script>
+</head>
+<body>
+	<div class="wrap" id="main">
+		<div id="header">
+			<div class="header-wrap">
+				<div class="header-top">
+					<a href="#" class="logo">JASON<span>jason.com<span></a>
+					<div id="seach">
+						<form action="">
+						    <fieldset id="flt">
+								<input type="seach" id="topseach" placeholder="请输入商品名称" autofocus="on">
+								<input type="submit" value="搜索" id="val">
+							</fieldset>
+						</form>
+					</div>
+					<span style="position: absolute;left: 1160px;
+    top: 23px;color:#d53b3b">换肤</span>
+    <button id="btnid" style="position: absolute;left: 1160px;
+    top: 50px;color:#d53b3b">还原</button>
+					<div id="change">
+						<button id="change-1"></button>
+						<button id="change-2"></button>
+						<button id="change-3"></button>
+					</div>
+				</div>
+				<div class="header-nav">
+					<ul class="nav">
+						<li class="nav-list"><a href="index.html">首页</a></li><li class="nav-list nav-list1"><a href="">推荐品牌</a><ul class="muen-ul">
+							<li class="muen-list"><a href="">耐克</a></li><li class="muen-list"><a href="">Adidas</a></li><li class="muen-list"><a href="">李宁</a></li><li class="muen-list"><a href="">纽巴伦</a></li><li class="muen-list"><a href="">安踏</a></li><li class="muen-list"><a href="">特步</a></li><li class="muen-list"><a href="">匹克</a></li><li class="muen-list"><a href="">万斯</a></li><li class="muen-list"><a href="">乔丹</a></li><li class="muen-list"><a href="">骆驼</a></li><li class="muen-list"><a href="">鸿星尔克</a></li><li class="muen-list"><a href="">蜘蛛王</a></li><li class="muen-list"><a href="">361度</a></li><li class="muen-list"><a href="">皮靴</a></li><li class="muen-list"><a href="">人字拖</a></li>
+						</ul></li><li class="nav-list nav-list2"><a href="">女装</a><ul class="muen-ul  muen-ul2">
+							<li class="muen-list muen-list2"><a href="">耐克</a></li><li class="muen-list"><a href="">Adidas</a></li><li class="muen-list"><a href="">李宁</a></li><li class="muen-list"><a href="">纽巴伦</a></li><li class="muen-list"><a href="">安踏</a></li><li class="muen-list"><a href="">特步</a></li><li class="muen-list"><a href="">匹克</a></li><li class="muen-list"><a href="">万斯</a></li><li class="muen-list"><a href="">乔丹</a></li><li class="muen-list"><a href="">骆驼</a></li><li class="muen-list"><a href="">鸿星尔克</a></li><li class="muen-list"><a href="">蜘蛛王</a></li><li class="muen-list"><a href="">361度</a></li><li class="muen-list"><a href="">皮靴</a></li><li class="muen-list"><a href="">人字拖</a></li>
+						</ul></li><li class="nav-list nav-list3"><a href="">男装</a><ul class="muen-ul muen-ul3">
+							<li class="muen-list"><a href="">耐克</a></li><li class="muen-list"><a href="">Adidas</a></li><li class="muen-list"><a href="">李宁</a></li><li class="muen-list"><a href="">纽巴伦</a></li><li class="muen-list"><a href="">安踏</a></li><li class="muen-list"><a href="">特步</a></li><li class="muen-list"><a href="">匹克</a></li><li class="muen-list"><a href="">万斯</a></li><li class="muen-list"><a href="">乔丹</a></li><li class="muen-list"><a href="">骆驼</a></li><li class="muen-list"><a href="">鸿星尔克</a></li><li class="muen-list"><a href="">蜘蛛王</a></li><li class="muen-list"><a href="">361度</a></li><li class="muen-list"><a href="">皮靴</a></li><li class="muen-list"><a href="">人字拖</a></li>
+						</ul></li><li class="nav-list nav-list4"><a href="">鞋包配饰</a><ul class="muen-ul muen-ul4">
+							<li class="muen-list"><a href="">耐克</a></li><li class="muen-list"><a href="">Adidas</a></li><li class="muen-list"><a href="">李宁</a></li><li class="muen-list"><a href="">纽巴伦</a></li><li class="muen-list"><a href="">安踏</a></li><li class="muen-list"><a href="">特步</a></li><li class="muen-list"><a href="">匹克</a></li><li class="muen-list"><a href="">万斯</a></li><li class="muen-list"><a href="">乔丹</a></li><li class="muen-list"><a href="">骆驼</a></li><li class="muen-list"><a href="">鸿星尔克</a></li><li class="muen-list"><a href="">蜘蛛王</a></li><li class="muen-list"><a href="">361度</a></li><li class="muen-list"><a href="">皮靴</a></li><li class="muen-list"><a href="">人字拖</a></li>
+						</ul></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="centent">
+			<div id="centent-left">
+				<p id="left-p">商品分类</p>
+				<div class="left-side" id="left-side-1">
+					<p>推荐品牌</p>
+					<ul class="left-side-ul">
+						<li class="left-side-list"><a href="#">耐克</a></li>
+						<li class="left-side-list"><a href="#">阿迪达斯</a></li>
+						<li class="left-side-list"><a href="#">达芙妮</a></li>
+						<li class="left-side-list"><a href="#">李宁</a></li>
+						<li class="left-side-list"><a href="#">安踏</a></li>
+						<li class="left-side-list"><a href="#">特步</a></li>
+						<li class="left-side-list"><a href="#">匹克</a></li>
+						<li class="left-side-list"><a href="#">骆驼</a></li>
+					</ul>
+				</div>
+				<div class="left-side">
+					<p>女装</p>
+					<ul class="left-side-ul">
+						<li class="left-side-list"><a href="#">大衣</a></li>
+						<li class="left-side-list"><a href="#">T恤</a></li>
+						<li class="left-side-list"><a href="#">羽绒</a></li>
+						<li class="left-side-list"><a href="#">衬衫</a></li>
+						<li class="left-side-list"><a href="#">针织</a></li>
+						<li class="left-side-list"><a href="#">连衣裙</a></li>
+						<li class="left-side-list"><a href="#">皮外套</a></li>
+						<li class="left-side-list"><a href="#">羊毛衫</a></li>
+					</ul>
+				</div>
+				<div class="left-side">
+					<p>男装</p>
+					<ul class="left-side-ul">
+						<li class="left-side-list"><a href="#">衬衫</a></li>
+						<li class="left-side-list"><a href="#">T恤衫</a></li>
+						<li class="left-side-list"><a href="#">夹克</a></li>
+						<li class="left-side-list"><a href="#">大皮衣</a></li>
+						<li class="left-side-list"><a href="#">风衣</a></li>
+						<li class="left-side-list"><a href="#">牛仔裤</a></li>
+						<li class="left-side-list"><a href="#">卫衣</a></li>
+						<li class="left-side-list"><a href="#">西服</a></li>
+					</ul>
+				</div>
+				<div class="left-side">
+					<p>鞋包配饰</p>
+					<ul class="left-side-ul">
+						<li class="left-side-list"><a href="#">围巾</a></li>
+						<li class="left-side-list"><a href="#">旅行箱</a></li>
+						<li class="left-side-list"><a href="#">真皮包</a></li>
+						<li class="left-side-list"><a href="#">韩版</a></li>
+						<li class="left-side-list"><a href="#">毛绒</a></li>
+						<li class="left-side-list"><a href="#">单肩包</a></li>
+						<li class="left-side-list"><a href="#">达芙妮</a></li>
+						<li class="left-side-list"><a href="#">骆驼</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="content-right">
+				<div id="right-left">
+					<div class="image-big"><img src="2.jpg" alt=""></div>
+					<div class="image-small"><img src="2.jpg" alt=""><img src="2.jpg" alt=""><img src="2.jpg" alt=""></div>
+					<div class="right-footer"></div>
+				</div>
+			    <div class="right-right">
+			    	<p>免烫好材料，好衣服</p>
+			    	<span>免烫好材料，好衣服免烫好材料，好衣服免烫好材料，好衣服免烫好材料，好衣服免烫好材料，好衣服免烫好材料，好衣服免烫好材料，好衣服免烫好材料，好衣服免烫好材料，好衣服免烫好材料，好衣服免烫好材料，好衣服免烫好材料，好衣服免烫好材料，好免烫好材料，好衣服免烫好材料，好衣服免烫好材料，好衣服免烫好材料，好衣服</span>
+			    	<p>价格：1249元</p>
+                    <p>促销：20元</p>
+                    <p>颜色：蓝白</p>
+                    <div class="div">
+	                    <div class="div1"><a href=""></a></div>
+	                    <div class="div2"><a href=""></a></div>
+	                    <div class="div3"><a href=""></a></div>
+                    </div>
+			    </div>
+		    </div>	
+		<div id="footer">
+			<div id="foot">
+				<div id="ban">
+				<span>版权信息</span></div>
+				<div id="zhan"><span>站点地图</span></div>
+				<div id="lianxi"><span>联系我们</span></div>
+				<address>@2016.5.20 Jason.com 云000001号</address>
+		    </div>
+		</div>
+	</div>
+</body>
+</html>

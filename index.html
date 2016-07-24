@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shopping</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="jquery-2.2.3.js"></script>
+	<script src="slider.js"></script>
+	<script src="jsMove"></script>
+	<script src="index.js"></script>
+	<script>
+		$(document).ready(function()
+			{
+				var timer=setInterval(function(){
+					var newul=$(".footer-ul>:first").clone(true);
+					$(".footer-ul").append(newul);
+					$(".footer-ul>:first").remove();
+				}, 1000);
+				$(".footer-ul").mouseover(function(){
+					clearInterval(timer);
+				});
+				$(".footer-ul").mouseout(function(){
+					timer=setInterval(function(){
+					var newul=$(".footer-ul>:first").clone(true);
+					$(".footer-ul").append(newul);
+					$(".footer-ul>:first").remove();
+				}, 1000);
+				});
+			});
+		$(document).ready(function(){
+			var zizndex=2;
+			setTimeout($("#p-span span").each(function(d){
+				$(this).mouseover(function(){
+					
+					if ($(this).hasClass('bianse')) {
+					
+					}else {
+				 $(".sports").eq(d).css("display","none");
+				 $(".sports").eq(d).css("z-index",zizndex++);
+                 $(".bianse").removeClass('bianse');
+                 $(".sports").eq(d).slideDown(600);
+                 $(this).addClass('bianse');
+					}
+				
+				});
+			}), 1000);
+			
+		});
+	</script>
+</head>
+<body>
+	<div class="wrap" id="main">
+		<div id="header">
+			<div class="header-wrap">
+				<div class="header-top">
+					<a href="#" class="logo">JASON<span>jason.com<span></a>
+					<div id="seach">
+						<form action="">
+						    <fieldset id="flt">
+								<input type="seach" id="topseach" placeholder="请输入商品名称" autofocus="on">
+								<input type="submit" value="搜索" id="val">
+							</fieldset>
+						</form>
+					</div>
+					<span style="position: absolute;left: 1160px;
+    top: 23px;color:#d53b3b">换肤</span>
+    <button id="btnid" style="position: absolute;left: 1160px;
+    top: 50px;color:#d53b3b">还原</button>
+					<div id="change">
+						<button id="change-1"></button>
+						<button id="change-2"></button>
+						<button id="change-3"></button>
+					</div>
+				</div>
+				<div class="header-nav">
+					<ul class="nav">
+						<li class="nav-list"><a href="">首页</a></li><li class="nav-list nav-list1"><a href="">推荐品牌</a><ul class="muen-ul">
+							<li class="muen-list"><a href="index2.html">耐克</a></li><li class="muen-list"><a href="">Adidas</a></li><li class="muen-list"><a href="">李宁</a></li><li class="muen-list"><a href="">纽巴伦</a></li><li class="muen-list"><a href="">安踏</a></li><li class="muen-list"><a href="">特步</a></li><li class="muen-list"><a href="">匹克</a></li><li class="muen-list"><a href="">万斯</a></li><li class="muen-list"><a href="">乔丹</a></li><li class="muen-list"><a href="">骆驼</a></li><li class="muen-list"><a href="">鸿星尔克</a></li><li class="muen-list"><a href="">蜘蛛王</a></li><li class="muen-list"><a href="">361度</a></li><li class="muen-list"><a href="">皮靴</a></li><li class="muen-list"><a href="">人字拖</a></li>
+						</ul></li><li class="nav-list nav-list2"><a href="">女装</a><ul class="muen-ul  muen-ul2">
+							<li class="muen-list muen-list2"><a href="">耐克</a></li><li class="muen-list"><a href="">Adidas</a></li><li class="muen-list"><a href="">李宁</a></li><li class="muen-list"><a href="">纽巴伦</a></li><li class="muen-list"><a href="">安踏</a></li><li class="muen-list"><a href="">特步</a></li><li class="muen-list"><a href="">匹克</a></li><li class="muen-list"><a href="">万斯</a></li><li class="muen-list"><a href="">乔丹</a></li><li class="muen-list"><a href="">骆驼</a></li><li class="muen-list"><a href="">鸿星尔克</a></li><li class="muen-list"><a href="">蜘蛛王</a></li><li class="muen-list"><a href="">361度</a></li><li class="muen-list"><a href="">皮靴</a></li><li class="muen-list"><a href="">人字拖</a></li>
+						</ul></li><li class="nav-list nav-list3"><a href="">男装</a><ul class="muen-ul muen-ul3">
+							<li class="muen-list"><a href="">耐克</a></li><li class="muen-list"><a href="">Adidas</a></li><li class="muen-list"><a href="">李宁</a></li><li class="muen-list"><a href="">纽巴伦</a></li><li class="muen-list"><a href="">安踏</a></li><li class="muen-list"><a href="">特步</a></li><li class="muen-list"><a href="">匹克</a></li><li class="muen-list"><a href="">万斯</a></li><li class="muen-list"><a href="">乔丹</a></li><li class="muen-list"><a href="">骆驼</a></li><li class="muen-list"><a href="">鸿星尔克</a></li><li class="muen-list"><a href="">蜘蛛王</a></li><li class="muen-list"><a href="">361度</a></li><li class="muen-list"><a href="">皮靴</a></li><li class="muen-list"><a href="">人字拖</a></li>
+						</ul></li><li class="nav-list nav-list4"><a href="">鞋包配饰</a><ul class="muen-ul muen-ul4">
+							<li class="muen-list"><a href="">耐克</a></li><li class="muen-list"><a href="">Adidas</a></li><li class="muen-list"><a href="">李宁</a></li><li class="muen-list"><a href="">纽巴伦</a></li><li class="muen-list"><a href="">安踏</a></li><li class="muen-list"><a href="">特步</a></li><li class="muen-list"><a href="">匹克</a></li><li class="muen-list"><a href="">万斯</a></li><li class="muen-list"><a href="">乔丹</a></li><li class="muen-list"><a href="">骆驼</a></li><li class="muen-list"><a href="">鸿星尔克</a></li><li class="muen-list"><a href="">蜘蛛王</a></li><li class="muen-list"><a href="">361度</a></li><li class="muen-list"><a href="">皮靴</a></li><li class="muen-list"><a href="">人字拖</a></li>
+						</ul></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="centent">
+			<div id="centent-left">
+				<p id="left-p">商品分类</p>
+				<div class="left-side" id="left-side-1">
+					<p>推荐品牌</p>
+					<ul class="left-side-ul">
+						<li class="left-side-list"><a href="#">耐克</a></li>
+						<li class="left-side-list"><a href="#">阿迪达斯</a></li>
+						<li class="left-side-list"><a href="#">达芙妮</a></li>
+						<li class="left-side-list"><a href="#">李宁</a></li>
+						<li class="left-side-list"><a href="#">安踏</a></li>
+						<li class="left-side-list"><a href="#">特步</a></li>
+						<li class="left-side-list"><a href="#">匹克</a></li>
+						<li class="left-side-list"><a href="#">骆驼</a></li>
+					</ul>
+				</div>
+				<div class="left-side">
+					<p>女装</p>
+					<ul class="left-side-ul">
+						<li class="left-side-list"><a href="#">大衣</a></li>
+						<li class="left-side-list"><a href="#">T恤</a></li>
+						<li class="left-side-list"><a href="#">羽绒</a></li>
+						<li class="left-side-list"><a href="#">衬衫</a></li>
+						<li class="left-side-list"><a href="#">针织</a></li>
+						<li class="left-side-list"><a href="#">连衣裙</a></li>
+						<li class="left-side-list"><a href="#">皮外套</a></li>
+						<li class="left-side-list"><a href="#">羊毛衫</a></li>
+					</ul>
+				</div>
+				<div class="left-side">
+					<p>男装</p>
+					<ul class="left-side-ul">
+						<li class="left-side-list"><a href="#">衬衫</a></li>
+						<li class="left-side-list"><a href="#">T恤衫</a></li>
+						<li class="left-side-list"><a href="#">夹克</a></li>
+						<li class="left-side-list"><a href="#">大皮衣</a></li>
+						<li class="left-side-list"><a href="#">风衣</a></li>
+						<li class="left-side-list"><a href="#">牛仔裤</a></li>
+						<li class="left-side-list"><a href="#">卫衣</a></li>
+						<li class="left-side-list"><a href="#">西服</a></li>
+					</ul>
+				</div>
+				<div class="left-side">
+					<p>鞋包配饰</p>
+					<ul class="left-side-ul">
+						<li class="left-side-list"><a href="#">围巾</a></li>
+						<li class="left-side-list"><a href="#">旅行箱</a></li>
+						<li class="left-side-list"><a href="#">真皮包</a></li>
+						<li class="left-side-list"><a href="#">韩版</a></li>
+						<li class="left-side-list"><a href="#">毛绒</a></li>
+						<li class="left-side-list"><a href="#">单肩包</a></li>
+						<li class="left-side-list"><a href="#">达芙妮</a></li>
+						<li class="left-side-list"><a href="#">骆驼</a></li>
+					</ul>
+				</div>
+			</div><div id="centent-slide">
+				<div class="slide-wrap" id="stop">
+					<div class="main">
+	     <div id="main-left" style="z-index: 9999"><button id="btn1">前面</button></div>
+	     <div id="main-right" style="z-index: 9999"><button id="btn2">后面</button></div>
+		<div class="bigimg">
+			<div class="img  big-active"><img src="10.jpg" alt=""></div>
+			<div class="img"><img src="2.jpg" alt=""></div>
+			<div class="img"><img src="3.jpg" alt=""></div>
+			<div class="img"><img src="4.jpg" alt=""></div>
+			<div class="img"><img src="6.jpg" alt=""></div>
+		</div>
+		<div class="smallimg">
+			<div class="img2 small-active"><img src="10.jpg" alt=""></div>
+			<div class="img2"><img src="2.jpg" alt=""></div>
+			<div class="img2"><img src="3.jpg" alt=""></div>
+			<div class="img2"><img src="4.jpg" alt=""></div>
+			<div class="img2"><img src="6.jpg" alt=""></div>
+		</div>
+	</div>
+				</div>
+			</div><div id="centent-right">
+			  <div class="side-right">
+				<div class="right-top"><a href="#"><img src="3.jpg" alt=""></a></div>
+				<div class="right-footer">
+					<p>最新动态</p>
+					<ul class="footer-ul">
+						<li class="footer-ul-list"><a href="#">[活动] 各种礼包各种送</a></li>
+						<li class="footer-ul-list"><a href="#">[活动] 耐克全场大减价</a></li>
+						<li class="footer-ul-list"><a href="#">[活动] 阿迪达斯快快买走</a></li>
+						<li class="footer-ul-list"><a href="#">[活动] 夏天的时候冬天的衣服已经有了</a></li>
+						<li class="footer-ul-list"><a href="#">[活动] 各种衣服就是各种买了</a></li>
+						<li class="footer-ul-list"><a href="#">[活动] 什么都有大减价</a></li>
+					</ul>
+				</div>
+			  </div>	
+			</div>
+			<div id="centent-footer">
+			   <p>品牌活动</p>
+				   <div id="p-span"> 
+					   <div id="p-span1"><span class="bianse">运动</span></div>
+					   <div id="p-span2"><span>女鞋</span></div>
+					   <div id="p-span3"><span>男鞋</span></div>
+					   <div id="p-span4"><span>童鞋</span></div>
+				   </div>
+			<div id="sports-wrap">
+				<div class="sports1 sports">
+					<ul class="soprts-ul">
+						<li class="soprts-ul-list"><a href="#"><img src="2.jpg"><span>美女</span></a></li>
+						<li class="soprts-ul-list"><a href="#"><img src="4.jpg"><span>美女</span></a></li>
+						<li class="soprts-ul-list"><a href="#"><img src="3.jpg"><span>美女</span></a></li>
+						<li class="soprts-ul-list"><a href="#"><img src="6.jpg"><span>美女</span></a></li>
+					</ul>
+				</div>
+				<div class="sports">
+					<ul class="soprts-ul">
+						<li class="soprts-ul-list"><a href="#"><img src="2.jpg"><span>美女</span></a></li>
+						<li class="soprts-ul-list"><a href="#"><img src="3.jpg"><span>美女</span></a></li>
+						<li class="soprts-ul-list"><a href="#"><img src="4.jpg"><span>美女</span></a></li>
+						<li class="soprts-ul-list"><a href="#"><img src="2.jpg"><span>美女</span></a></li>
+					</ul>
+				</div>
+				<div class="sports">
+					<ul class="soprts-ul">
+						<li class="soprts-ul-list"><a href="#"><img src="2.jpg"><span>美女</span></a></li>
+						<li class="soprts-ul-list"><a href="#"><img src="6.jpg"><span>美女</span></a></li>
+						<li class="soprts-ul-list"><a href="#"><img src="4.jpg"><span>美女</span></a></li>
+						<li class="soprts-ul-list"><a href="#"><img src="6.jpg"><span>美女</span></a></li>
+					</ul>
+				</div>
+				<div class="sports">
+					<ul class="soprts-ul">
+						<li class="soprts-ul-list"><a href="#"><img src="2.jpg"><span>美女</span></a></li>
+						<li class="soprts-ul-list"><a href="#"><img src="4.jpg"><span>美女</span></a></li>
+						<li class="soprts-ul-list"><a href="#"><img src="4.jpg"><span>美女</span></a></li>
+						<li class="soprts-ul-list"><a href="#"><img src="6.jpg"><span>美女</span></a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="foot">
+				<div id="ban">
+				<span>版权信息</span></div>
+				<div id="zhan"><span>站点地图</span></div>
+				<div id="lianxi"><span>联系我们</span></div>
+				<address>@2016.5.20 Jason.com 云000001号</address>
+		    </div>
+		</div>
+	</div>
+</body>
+</html>
